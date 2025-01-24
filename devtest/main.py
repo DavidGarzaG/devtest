@@ -11,11 +11,6 @@ class Database:
             "elevator": ["elevator_id", "building_id", "timestamp", "resting_floor", "floor_demanded", "out_or_in_demand", "weight"],
         }
 
-        # # Is this okay?
-        # self.connection = sqlite3.connect("elevator.db")
-        # self.cursor = self.connection.cursor()
-    
-
     def insert_data(self, table_name, csv_path=None, *args):
         """
         Generic method to insert data. 
